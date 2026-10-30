@@ -4,7 +4,9 @@ public:
         int n=nums.size();
         int s=0;
         int c=0;
-        
+        if(n==1){
+            return 0;
+        }
         for(int i=0;i<n;i++){
             s+=nums[i];
             if(s==0){
