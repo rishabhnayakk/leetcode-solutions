@@ -55,8 +55,8 @@ Output: 17
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 11.3 MB (beats 76.67%)  
-**Submitted:** 2026-10-30T18:10:55.496Z  
+**Memory:** 11.1 MB (beats 99.35%)  
+**Submitted:** 2026-10-30T18:11:45.778Z  
 
 ```cpp
 class Solution {
@@ -64,13 +64,13 @@ public:
     int maximumWealth(vector<vector<int>>& accounts) {
         int maxW = 0;
         for (int i = 0; i < accounts.size(); i++) {
-            int sum = 0;
+            int W = 0;
             for (int j = 0; j < accounts[i].size(); j++) {
-                sum += accounts[i][j];
+                W += accounts[i][j];
             }
-            maxW=max(sum,maxW);
-            // if (sum > maxWealth) {
-            //     maxWealth = sum;
+            maxW=max(W,maxW);
+            // if (W > maxW) {
+            //     maxW = W;
             // }
         }
         return maxW;
