@@ -56,9 +56,9 @@ The ant never returned to the boundary, so the answer is 0.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 3 ms (beats 80.06%)  
-**Memory:** 22.8 MB (beats 100.00%)  
-**Submitted:** 2026-10-30T17:01:15.348Z  
+**Runtime:** 9 ms (beats 12.93%)  
+**Memory:** 23.5 MB (beats 11.37%)  
+**Submitted:** 2026-10-30T17:09:13.081Z  
 
 ```cpp
 class Solution {
@@ -67,7 +67,9 @@ public:
         int n=nums.size();
         int s=0;
         int c=0;
-        
+        if(n==1){
+            return 0;
+        }
         for(int i=0;i<n;i++){
             s+=nums[i];
             if(s==0){
