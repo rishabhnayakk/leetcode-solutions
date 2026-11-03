@@ -47,20 +47,24 @@ Output: false
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 18 MB (beats 37.58%)  
-**Submitted:** 2026-11-03T16:38:21.974Z  
+**Memory:** 17.8 MB (beats 92.19%)  
+**Submitted:** 2026-11-03T16:39:50.806Z  
 
 ```cpp
 class Solution {
 public:
     bool search(vector<int>& nums, int target) {
         int n=nums.size();
-        for(int i=0;i<n;i++){
-            if(nums[i]==target){
-                return true;
-            }
-        }
-        return false;
+        // for(int i=0;i<n;i++){
+        //     if(nums[i]==target){
+        //         return true;
+        //     }
+        // }
+        // return false;
+        sort(nums.begin(),nums.end());
+        return binary_search(nums.begin(),nums.end(),target);
+
+
     }
 };
 ```
