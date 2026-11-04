@@ -58,9 +58,9 @@ All indices match.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 2 ms (beats 8.78%)  
-**Memory:** 11 MB (beats 93.93%)  
-**Submitted:** 2026-10-30T20:43:32.591Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 11.4 MB (beats 32.74%)  
+**Submitted:** 2026-11-04T13:41:20.591Z  
 
 ```cpp
 class Solution {
