@@ -52,9 +52,9 @@ Explanation: The only possible triplet sums up to 0.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 3127 ms (beats 5.00%)  
-**Memory:** 446.8 MB (beats 5.02%)  
-**Submitted:** 2026-11-05T19:33:21.581Z  
+**Runtime:** 3103 ms (beats 5.00%)  
+**Memory:** 446.9 MB (beats 5.20%)  
+**Submitted:** 2026-11-05T19:35:08.556Z  
 
 ```cpp
 class Solution {
@@ -83,10 +83,15 @@ public:
             }
         }
         sort(ans.begin(), ans.end());
+// Sort triplets so that duplicate triplets become adjacent.
 
         ans.erase(unique(ans.begin(), ans.end()), ans.end());
+// Remove consecutive duplicate triplets.
+// unique() moves duplicates to the end.
+// erase() deletes those extra elements.
 
         return ans;
+// Return the final unique triplets.
     }
 };
 ```
