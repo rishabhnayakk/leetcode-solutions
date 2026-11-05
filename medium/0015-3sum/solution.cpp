@@ -24,9 +24,14 @@ public:
             }
         }
         sort(ans.begin(), ans.end());
+// Sort triplets so that duplicate triplets become adjacent.
 
         ans.erase(unique(ans.begin(), ans.end()), ans.end());
+// Remove consecutive duplicate triplets.
+// unique() moves duplicates to the end.
+// erase() deletes those extra elements.
 
         return ans;
+// Return the final unique triplets.
     }
 };
