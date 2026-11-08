@@ -42,9 +42,9 @@ Output: 1
 ## Solution
 
 **Language:** C++  
-**Runtime:** 3 ms (beats 29.04%)  
-**Memory:** 62.9 MB (beats 66.86%)  
-**Submitted:** 2026-11-08T08:16:25.130Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 62.8 MB (beats 89.30%)  
+**Submitted:** 2026-11-08T08:17:37.267Z  
 
 ```cpp
 
@@ -54,7 +54,6 @@ public:
         int s = 0;
         int e = height.size() - 1;
         int m = 0;
-
         while (s < e) {
             int area = min(height[s], height[e]) * (e - s);
             m = max(m, area);
@@ -62,11 +61,9 @@ public:
                 s++;
             } else {
                 e--;
-            }
-        }
+            }}
         return m;}
 };
-
 ```
 
 ---
