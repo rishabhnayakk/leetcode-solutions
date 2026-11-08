@@ -5,7 +5,6 @@ public:
         int s = 0;
         int e = height.size() - 1;
         int m = 0;
-
         while (s < e) {
             int area = min(height[s], height[e]) * (e - s);
             m = max(m, area);
@@ -13,7 +12,6 @@ public:
                 s++;
             } else {
                 e--;
-            }
-        }
+            }}
         return m;}
 };
