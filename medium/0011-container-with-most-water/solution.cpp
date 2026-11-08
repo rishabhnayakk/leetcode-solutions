@@ -7,8 +7,8 @@ public:
         int m = 0;
 
         while (s < e) {
-            int water = min(height[s], height[e]) * (e - s);
-            m = max(m, water);
+            int area = min(height[s], height[e]) * (e - s);
+            m = max(m, area);
             if (height[s] < height[e]) {
                 s++;
             } else {
