@@ -42,9 +42,9 @@ Output: 1
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 53.73%)  
-**Memory:** 62.8 MB (beats 66.86%)  
-**Submitted:** 2026-11-08T08:13:53.127Z  
+**Runtime:** 3 ms (beats 29.04%)  
+**Memory:** 62.9 MB (beats 66.86%)  
+**Submitted:** 2026-11-08T08:16:25.130Z  
 
 ```cpp
 
@@ -56,8 +56,8 @@ public:
         int m = 0;
 
         while (s < e) {
-            int water = min(height[s], height[e]) * (e - s);
-            m = max(m, water);
+            int area = min(height[s], height[e]) * (e - s);
+            m = max(m, area);
             if (height[s] < height[e]) {
                 s++;
             } else {
