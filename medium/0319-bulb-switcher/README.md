@@ -50,8 +50,8 @@ Output: 1
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 7.5 MB (beats 99.77%)  
-**Submitted:** 2026-11-09T16:00:08.049Z  
+**Memory:** 8 MB (beats 4.39%)  
+**Submitted:** 2026-11-09T16:00:18.988Z  
 
 ```cpp
 class Solution {
@@ -60,8 +60,7 @@ public:
         int count = 0;
         for (int i = 1; i * i <= n; i++) {
             count++;
-        }
-        return count;
+        }return count;
     }
 };
 ```
