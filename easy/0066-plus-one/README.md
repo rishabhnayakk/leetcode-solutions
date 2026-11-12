@@ -56,16 +56,15 @@ Thus, the result should be [1,0].
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 13.15%)  
-**Memory:** 11.5 MB (beats 77.13%)  
-**Submitted:** 2026-11-12T13:41:54.736Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 11.4 MB (beats 77.13%)  
+**Submitted:** 2026-11-12T13:42:21.643Z  
 
 ```cpp
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
         int n=digits.size();
-        
         for(int i=n-1;i>=0;i--){
             if(digits[i]<9){
                 digits[i]+=1;
@@ -77,7 +76,6 @@ public:
         }
         digits.insert(digits.begin(), 1);
         return digits;
-
     }
 };
 ```
