@@ -10,6 +10,8 @@ Increment the large integer by one and return *the resulting array of digits*.
 
  
 
+Original
+C++
 **Example 1:**
 
 ```
@@ -54,9 +56,9 @@ Thus, the result should be [1,0].
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 11.4 MB (beats 81.80%)  
-**Submitted:** 2026-10-29T17:42:51.973Z  
+**Runtime:** 1 ms (beats 13.15%)  
+**Memory:** 11.5 MB (beats 77.13%)  
+**Submitted:** 2026-11-12T13:41:54.736Z  
 
 ```cpp
 class Solution {
@@ -75,6 +77,7 @@ public:
         }
         digits.insert(digits.begin(), 1);
         return digits;
+
     }
 };
 ```
