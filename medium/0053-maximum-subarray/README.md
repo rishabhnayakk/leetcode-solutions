@@ -51,9 +51,9 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 2 ms (beats 19.94%)  
-**Memory:** 71.6 MB (beats 69.36%)  
-**Submitted:** 2026-11-15T18:33:06.329Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 71.6 MB (beats 89.99%)  
+**Submitted:** 2026-11-15T18:34:28.134Z  
 
 ```cpp
 
@@ -63,11 +63,11 @@ public:
         int sum = 0;
         int maxi = nums[0];
         for (int i = 0; i < nums.size(); i++) {
-            sum += nums[i];
+            sum=max(sum+nums[i],nums[i]);
             maxi = max(maxi, sum);
-            if (sum < 0) {
-                sum = 0;
-            }
+            // if (sum < 0) {
+            //     sum = 0;
+            // }
         }
         return maxi;
     }
