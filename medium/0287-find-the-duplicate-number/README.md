@@ -56,23 +56,34 @@ Output: 3
 ## Solution
 
 **Language:** C++  
-**Runtime:** 37 ms (beats 22.43%)  
-**Memory:** 65 MB (beats 58.88%)  
-**Submitted:** 2026-11-15T17:57:26.357Z  
+**Runtime:** 2 ms (beats 80.29%)  
+**Memory:** 67.5 MB (beats 23.86%)  
+**Submitted:** 2026-11-15T18:13:01.677Z  
 
 ```cpp
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
+        // sort(nums.begin(),nums.end());
+        // int n=nums.size();
+        // for(int i=0;i<n;i++){
+        //    if(nums[i]==nums[i+1]){
+        //         return nums[i];
+        //         break;
+        //    } 
+        // }
+        // return{};
         int n=nums.size();
-        for(int i=0;i<n;i++){
-           if(nums[i]==nums[i+1]){
-                return nums[i];
-                break;
-           } 
+        vector<int> f(n+1,0);
+        for(int i=0;i<n;i++)
+        {
+            f[nums[i]]++;
         }
-        return{};
+        for(int i=0;i<n;i++){
+            if(f[i]>=2){
+                return i;
+            }
+    }return -1;
     }
 };
 ```
