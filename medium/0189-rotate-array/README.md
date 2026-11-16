@@ -51,13 +51,13 @@ rotate 2 steps to the right: [3,99,-1,-100]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 57.46%)  
+**Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 263.4 MB (beats 64.43%)  
-**Submitted:** 2026-11-16T17:26:12.808Z  
+**Submitted:** 2026-11-16T18:57:22.591Z  
 
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
 class Solution {
 public:
