@@ -8,6 +8,8 @@ Given an integer array `nums`, rotate the array to the right by `k` steps, where
 
  
 
+Original
+C++
 **Example 1:**
 
 ```
@@ -49,9 +51,9 @@ rotate 2 steps to the right: [3,99,-1,-100]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 55.82%)  
-**Memory:** 263.2 MB (beats 87.32%)  
-**Submitted:** 2026-11-02T17:51:08.257Z  
+**Runtime:** 4 ms (beats 57.46%)  
+**Memory:** 263.4 MB (beats 64.43%)  
+**Submitted:** 2026-11-16T17:26:12.808Z  
 
 ```cpp
 #include <bits/stdc++.h>
