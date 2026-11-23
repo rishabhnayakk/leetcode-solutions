@@ -8,6 +8,8 @@ Given a positive integer `n`, write a function that returns the number of set bi
 
  
 
+Original
+C++
 **Example 1:**
 
 **Input:** n = 11
@@ -51,9 +53,9 @@ The input binary string **1111111111111111111111111111101** has a total of thirt
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 8.51%)  
-**Memory:** 8.1 MB (beats 97.04%)  
-**Submitted:** 2026-10-31T19:48:28.664Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 8.2 MB (beats 71.96%)  
+**Submitted:** 2026-11-23T18:22:38.767Z  
 
 ```cpp
 class Solution {
