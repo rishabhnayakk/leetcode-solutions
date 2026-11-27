@@ -70,23 +70,23 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 11.6 MB (beats 93.37%)  
-**Submitted:** 2026-11-13T18:24:08.553Z  
+**Memory:** 11.5 MB (beats 89.90%)  
+**Submitted:** 2026-11-27T10:28:54.830Z  
 
 ```cpp
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        // int j=0;
-        // for(int i=0;i<nums.size();i++){
-        //     if(nums[i]!=val){
-        //         nums[j]=nums[i];
-        //         j++;
-        //     }
-        // }
-        // return j;
-        erase(nums,val);
-        return nums.size();
+        int j=0;
+        for(int i=0;i<nums.size();i++){
+            if(nums[i]!=val){
+                nums[j]=nums[i];
+                j++;
+            }
+        }
+        return j;
+        // erase(nums,val);
+        // return nums.size();
     }
 };
 ```
